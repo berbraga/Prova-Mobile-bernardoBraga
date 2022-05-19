@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="414dp"
+        android:layout_height="51dp"
+        android:text="Cardapio Mobile"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_feijoada"
+        android:layout_width="143dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo"
+        app:srcCompat="@drawable/feijoada" />
+
+    <ImageView
+        android:id="@+id/iv_macarao"
+        android:layout_width="144dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_feijoada"
+        app:srcCompat="@drawable/macarrao" />
+
+    <ImageView
+        android:id="@+id/iv_carne"
+        android:layout_width="143dp"
+        android:layout_height="94dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_macarao"
+        app:srcCompat="@drawable/picanha" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="143dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_carne"
+        app:srcCompat="@drawable/salada" />
+
+    <TextView
+        android:id="@+id/tv_titulo_feijoada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:text="FEIJOADA"
+        app:layout_constraintStart_toEndOf="@+id/iv_feijoada"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo" />
+
+    <TextView
+        android:id="@+id/tv_titulo_macarao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="60dp"
+        android:text="MACARAO"
+        app:layout_constraintStart_toEndOf="@+id/iv_macarao"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descricao_feijoada" />
+
+    <TextView
+        android:id="@+id/tv_titulo_carne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="60dp"
+        android:text="CARNE"
+        app:layout_constraintStart_toEndOf="@+id/iv_carne"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descricao_macarao" />
+
+    <TextView
+        android:id="@+id/tv_titulo_salada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="60dp"
+        android:text="SALADA"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/tv_descricao_carne" />
+
+    <TextView
+        android:id="@+id/tv_descricao_feijoada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="descricao feijoada"
+        app:layout_constraintStart_toEndOf="@+id/iv_feijoada"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_feijoada" />
+
+    <TextView
+        android:id="@+id/tv_descricao_macarao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="descricao macarrao"
+        app:layout_constraintStart_toEndOf="@+id/iv_macarao"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_macarao" />
+
+    <TextView
+        android:id="@+id/tv_descricao_carne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="descricao Carne"
+        app:layout_constraintStart_toEndOf="@+id/iv_carne"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_carne" />
+
+    <TextView
+        android:id="@+id/tv_descricao_salada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="descricao salada"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_salada" />
+
+    <Button
+        android:id="@+id/bt_mostra_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="156dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="285dp"
+        android:layout_height="221dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_mostra_test"
+                android:layout_width="301dp"
+                android:layout_height="153dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="108dp"
+                android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
